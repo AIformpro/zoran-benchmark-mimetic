@@ -1,0 +1,21 @@
+[project]
+name = "zoran-benchmark-mimetic"
+version = "0.1.0"
+description = "Bench IA<->IA : densité, cohérence, latence, transfert, persistance (prototype)."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["zoran", "benchmark", "mimetic-ai"]
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+zbm = "zbm.core:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-q"
